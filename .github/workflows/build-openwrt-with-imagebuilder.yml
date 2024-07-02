@@ -201,7 +201,7 @@ on:
         options:
           - ophub
           - angel
-          - yourname
+          - ikhsandi
 
 env:
   TZ: America/New_York
