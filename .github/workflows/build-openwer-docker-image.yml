@@ -30,13 +30,13 @@ on:
           - ophub/openwrt-aarch64:latest
 
 env:
-  TZ: America/New_York
+  TZ: Etc/UTC
   MAKE_DOCKER_SH: config/docker/make_docker_image.sh
   DOCKER_OUTPATH: out
 
 jobs:
   build:
-    runs-on: ubuntu-22.04-arm
+    runs-on: ubuntu-24.04-arm
     if: ${{ github.event.repository.owner.id }} == ${{ github.event.sender.id }}
 
     steps:
